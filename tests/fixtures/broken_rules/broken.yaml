@@ -1,0 +1,10 @@
+id: broken_rule
+scope: "deliberately broken for fail-closed testing"
+short_circuit: stop_on_first_block
+pipeline:
+  - type: pattern
+    deny:
+      - '(unclosed group'
+exemplars:
+  out_of_scope:
+    - "anything"

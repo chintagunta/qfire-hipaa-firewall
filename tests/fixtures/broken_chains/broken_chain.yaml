@@ -1,0 +1,6 @@
+id: broken_chain
+mode: ordered
+default: allow
+fail_policy: fail_closed
+rules:
+  - broken_rule

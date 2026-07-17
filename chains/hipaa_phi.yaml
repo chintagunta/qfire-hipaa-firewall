@@ -1,0 +1,6 @@
+id: hipaa_phi
+mode: ordered
+default: allow
+fail_policy: fail_closed
+rules:
+  - hc_phi_exfiltration

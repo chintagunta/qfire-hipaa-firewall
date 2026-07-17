@@ -1,0 +1,6 @@
+id: injection_ordered
+mode: ordered
+default: allow
+fail_policy: fail_closed
+rules:
+  - injection_instruction_override
