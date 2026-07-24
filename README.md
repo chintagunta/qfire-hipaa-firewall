@@ -1,6 +1,7 @@
 # qfire-port
 
 [![CI](https://github.com/chintagunta/qfire-hipaa-firewall/actions/workflows/ci.yml/badge.svg)](https://github.com/chintagunta/qfire-hipaa-firewall/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/qfire-hipaa-firewall.svg)](https://pypi.org/project/qfire-hipaa-firewall/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue.svg)](pyproject.toml)
 
@@ -13,6 +14,13 @@ Contributions welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Security issue
 see [SECURITY.md](SECURITY.md). Licensed under [MIT](LICENSE).
 
 ## Install
+
+```bash
+pip install qfire-hipaa-firewall                    # core: PyYAML, regex
+pip install "qfire-hipaa-firewall[classifier]"       # + onnxruntime (CPU) and tokenizers, for the local ONNX classifier node
+```
+
+From source (uv):
 
 ```bash
 uv sync                    # core: PyYAML, regex
