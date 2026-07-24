@@ -32,6 +32,11 @@ Issues = "https://github.com/chintagunta/qfire-hipaa-firewall/issues"
 dev = [
     "pytest>=8.0",
 ]
+docs = [
+    "sphinx>=7.0",
+    "sphinx-rtd-theme>=2.0",
+    "myst-parser>=3.0",
+]
 
 [project.scripts]
 qfire = "qfire.cli:main"
